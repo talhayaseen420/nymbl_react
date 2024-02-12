@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.shared-container {
+  padding: 50px 90px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.left-section {
+  flex-basis: 45%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.right-section {
+  flex-basis: 45%;
+}
+
+.home-main {
+  background-image: url('../assests/images/hospital.jpg'); 
+}
+
+.appointments-main {
+  background-image: url('../assests/images/appoint.jpeg'); 
+}
+
+.billing-main {
+  background-image: url('../assests/images/billing.png'); 
+}
+
+.plans-main {
+  background-image: url('../assests/images/plan.png'); 
+}
+
+.history-main {
+  background-image: url('../assests/images/history.jpg'); 
+}
+
+.background-main {
+  height: 325px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position:center ; 
+}
+
+.right-section {
+  .image {
+    height: 387px;
+    position: relative;
+    background-size: cover;
+    background-image: url('../assests/images/appointments-right-section.jpg'); 
+  }
+
+  .history-image {
+    height: 500px;
+    position: relative;
+    background-size: cover;
+    background-image: url('../assests/images/patient-history.png'); 
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-first {
+  flex-basis: 40%;
+}
+
+.form-second {
+  flex-basis: 50%;
+}
+
+.btn-primary {
+  background-color: #01a998 !important;
+  border-color: #01a998 !important;
+}
+
+.main-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust the alpha value for the desired overlay opacity */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.overlay img {
+  width: 200px;
+  height: 200px;
 }
